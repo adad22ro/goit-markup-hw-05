@@ -21,7 +21,7 @@
         >
         <nav>
           <ul class="navigation">
-            <li><a href="./index.html" class="nav-links">Studio</a></li>
+            <li><a href="./index.html" class="nav-links active">Studio</a></li>
             <li>
               <a href="./portfolio.html" class="nav-links">Portfolio</a>
             </li>
@@ -56,7 +56,7 @@
       </div>
       <section class="hero-section">
         <h1 class="hero-heading">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button">Request our service</button>
+        <button type="button" data-modal-open>Request our service</button>
       </section>
     </header>
     <main>
@@ -116,26 +116,35 @@
           <h2 class="section-heading what-we-do-heading">What we do</h2>
 
           <ul class="what-we-do-photos">
-            <li>
+            <li class="what-we-do-card">
               <img
                 src="./images/man-writing-on-keyboard.png"
                 alt="man writing on keyboard"
                 width="370"
               />
+              <div class="overlay-text">
+                <h3>DESKTOP APPS</h3>
+              </div>
             </li>
-            <li>
+            <li class="what-we-do-card">
               <img
                 src="./images/man-woking-at-a-laptop-and-a-phone.png"
                 alt="man woking at a laptop and a phone"
                 width="370"
               />
+              <div class="overlay-text">
+                <h3>Mobile APPS</h3>
+              </div>
             </li>
-            <li>
+            <li class="what-we-do-card">
               <img
                 src="./images/a-tablet-with-colors-grid.png"
                 alt="a tablet with colors grid"
                 width="370"
               />
+              <div class="overlay-text">
+                <h3>DESIGN SOLUTIONS</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -352,5 +361,16 @@
         </div>
       </footer>
     </main>
+
+    <!-- MODAL -->
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+        continut test
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
